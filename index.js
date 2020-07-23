@@ -13,10 +13,10 @@ app.set("/views", "./views")//thu muc chua "trangchu"
 let server = require("http").Server(app);
 //khai bao socket
 var io = require("socket.io")(server);
-var port = process.env.PORT || 3000;
+//var port = process.env.PORT || 3000;
 
 //server.listen(3000);
-//server.listen(var port = process.env.PORT || 3000);
+server.listen(process.env.PORT || 3000);
 //lang nghe co nguoi ket noi len server
 let mangUser = [];
 let mangnguoichoi = [];
@@ -269,7 +269,8 @@ app.get("/", function (req, res) {
     res.render("trangchu")//vi dang dung ham cua express nen ta co ham render
     //muon render duoc thi khai bao chung ta dang dung ejs
 })
-
+/*
 http.listen(port, function(){
   console.log('listening on *:' + port);
 });
+*/
