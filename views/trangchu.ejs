@@ -7,7 +7,10 @@
     <script src="jquery.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <!-------thu vien socket io cho phia client------>
+    <!---
     <script src=" socket.io/socket.io.js"></script>
+    -->
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <style>
         body{
             background-color: #79CDCD;
@@ -26,7 +29,7 @@
 
 <script>
     //ket noi len server
-    var socket = io("192.168.1.156:3000")
+    var socket = io()
     //Buoc2-2: khach hang lang nghe du lieu tu server tra ve cho tat ca
     //khach hang
 
