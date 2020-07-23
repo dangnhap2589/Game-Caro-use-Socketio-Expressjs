@@ -269,8 +269,8 @@ app.get("/", function (req, res) {
     res.render("trangchu")//vi dang dung ham cua express nen ta co ham render
     //muon render duoc thi khai bao chung ta dang dung ejs
 })
-/*
+
 http.listen(port, function(){
   console.log('listening on *:' + port);
 });
-*/
+
